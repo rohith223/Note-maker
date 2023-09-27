@@ -1,0 +1,108 @@
+/* Common styles for login and signup pages */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #222, #444); /* Blackish gradient background for the page */
+  }
+  .head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .form-container {
+    background: linear-gradient(to bottom, #eee9e9, #5a5656); /* Blackish gradient background for the container */
+    width: 300px !important; /* Increased container width */
+    
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 4px rgba(119, 185, 223, 0.2);
+  }
+  
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .login__input,
+  .signup__input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .password-error {
+    margin-top: -5px;
+  }
+  
+  .login__submit,
+  .signup__submit {
+    background: linear-gradient(to bottom, #000000, #b7b9bb); /* Gradient button background */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .login__submit:hover,
+  .signup__submit:hover {
+    background: linear-gradient(to bottom, #47494b, #9da6ac); /* Gradient button background on hover */
+  }
+  
+  .login__submit:disabled,
+  .signup__submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+    color: #bdb8b8;
+  }
+  
+  a {
+    color: #cfc8c8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for the password show/hide icon */
+  .password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+  }
+  
