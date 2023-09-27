@@ -11,11 +11,16 @@ module.exports = (sequelize, DataTypes) => {
       date: {
         type: DataTypes.STRING,
       },
+      deleted: {
+        type: DataTypes.BOOLEAN,
+
+      },
       userEmail:{
         type: DataTypes.STRING,
         validate: {
           isEmail: true,
         },
+
       }
     });
   

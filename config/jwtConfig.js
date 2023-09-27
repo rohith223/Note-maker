@@ -15,11 +15,13 @@ const decodeToken = async (token) => {
 
 const validate = async (req, res, next) => {
   try {
-    // console.log("cookie", JSON.stringify(req.cookies, null, 2));
-    console.log(req.headers.authorization);
+
     if (req.headers.authorization) {
+      
       let token = await req.headers.authorization.split(" ")[1];
+  
       let myDecodeToken = await decodeToken(token);
+
       if (myDecodeToken) {
         next();
       } else {
